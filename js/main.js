@@ -16,7 +16,18 @@ $(document).ready(function(){
         }else{
             $('header').removeClass('header-active')
         }
-    })
 
+        $('section').each(function(){
+            var id = $(this).attr('id');
+            var height = $(this).height();
+            var offset = $(this).offset().top - 200;
+            var top = $(window).scrollTop();
+            if(top >= offset && top < height + offset){
+                $('.navbar ul li a').removeClass('active');
+                $('.navbar').find('[href="#' + id + '"]').addClass('active');
+            }
+        });
+
+    })
 
 });

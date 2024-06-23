@@ -13,106 +13,6 @@
     --black: #000000;
 }
 
-*{
-    font-family: 'Roboto', sans-serif;
-    text-transform: capitalize;
-    text-decoration: none;
-    outline: none;
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-}
-
-*::selection{
-    background: var(--c_blue2);
-    color: #fff;
-}
-
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
-
-.heading{
-    font-size: 5rem;
-    color: var(--c_pink1);
-    text-align: center;
-    margin-top: 2rem;
-    padding: 0 1rem;
-    padding-top: 6rem;
-    letter-spacing: .2rem;
-    font-weight: 500;
-}
-
-.title{
-    padding: 0 1rem;
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 400;
-    color: #aaa;
-}
-
-header{
-    width: 96%;
-    background:#fff;
-    position: fixed;
-    top: 2em; left:50%;
-    transform: translateX(-50%);
-    border-radius: 5rem;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 2rem;
-    z-index: 1000;
-    transition: .2s;
-}
-
-.header-active{
-    top: 0;
-    width: 100%;
-    border-radius: 0;
-    box-shadow: 0 .1rem .3rem var(--shadow);
-
-}
-
-header .navbar ul{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-}
-
-header .navbar ul li{
-    margin: 0 1rem;
-}
-
-header .navbar ul li a{
-  font-size: 2rem;
-  color: var(--c_blue2);
-  transition: .2s;
-}
-
-header .navbar ul li .active,
-header .navbar ul li a:hover{
-    color: var(--c_pink1);
-}
-
-header .logo img{
-    width: 40%;
-}
-
-
-header .fa-bars{
-    font-size: 3rem;
-    color: var(--c_blue2);
-    cursor: pointer;
-    display: none;
-    transition: .2s linear;
-}
-
-header .fa-bars:hover{
-    color: var(--c_pink1);
-}
-
 .home{
   min-height: 60vh;
   background:linear-gradient(#8bb7f080, #ed559280), url(../img/bg.png) no-repeat;
@@ -293,6 +193,7 @@ header .fa-bars:hover{
     background-color: var(--white);
     width: 25rem;
     box-shadow: 0 .3rem .5rem var(--shadow);
+    cursor: pointer;
 }
 
 
@@ -391,50 +292,6 @@ header .fa-bars:hover{
     background: none;
     background-color: var(--c_pink2);
 }
-
-.footer{
-    text-align: center;
-}
-
-.footer .icons{
-    padding: 3rem 0;
-}
-
-.footer .icons a{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.2rem;
-    text-align: center;
-    border-radius: 50%;
-    color: var(--c_blue2);
-    border: .2rem solid var(--c_blue2);
-    font-size: 2rem;
-    margin: 0 .1rem;
-    transition: .2s linear;
-}
-
-.footer .icons a:hover{
-    color: var(--white);
-    background: var(--c_pink2);
-    border-color: var(--c_pink2);
-}
-
-.footer .credit{
-    font-size: 2rem;
-    border-top: .1rem solid #999;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    color: #666;
-    width: 90%;
-    padding: 1rem 0;
-}
-
-.footer .credit span{
-    color: var(--c_blue2);
-}
-
-
-
 
 
 header .fa-times{

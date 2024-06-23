@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --violet:#C63BFA;
+    --shadow:#0000004d;
+    --c_bg: #d1d8e1;
+    --c_blue1: #8bb7f0;
+    --c_blue2: #4ea5e0;
+    --c_h1: #033557;
+    --c_pink1: #ed5592;
+    --c_pink2: #f78f8f;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.container{
+    background: #ffffff8f;
+    margin-top: 2rem;
+    padding: 5rem 30%;
+}
+.conteudo-curso{
+    background:linear-gradient(#8bb7f080, #ed559280), url(../img/bg.png) no-repeat;
+    min-height: 100vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.conteudo-curso .expandable{
+    --xy-padding: 14px;
+    --border-radius: 6px;
+    --transition-ms: 0.3s;
+
+    max-width: 500px;
+    margin: 1rem 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo-curso .expandable--open .expandable__content-wrapper{
+    grid-template-rows: 1fr;
+}
+
+.conteudo-curso .expandable i{
+    transition: transform var(--transition-ms);
+}
+
+.conteudo-curso .expandable--open i{
+    transform: rotate(-90deg);
+}
+
+.conteudo-curso .expandable__title-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--xy-padding);
+    user-select: none;
+    background-color: var(--c_blue2);
+    color: var(--white);
+    border-radius: var(--border-radius) var(--border-radius) var(--border-radius) var(--border-radius);
+    cursor: pointer;
+}
+
+.conteudo-curso .expandable--open .expandable__title-bar{
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.conteudo-curso .expandable__title{
+    font-weight: bold;
+}
+
+.conteudo-curso .expandable__content{
+    padding: 0 var(--xy-padding);
+    line-height: 1.5;
+    font-size: 1.4rem;
+    background: var(--white);
+    border: 1px solid #dddddd;
+    border-top: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    overflow: hidden;
+}
+.conteudo-curso .expandable__content p{
+    margin: 1.5rem;
+}
+.expandable__content-wrapper{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}

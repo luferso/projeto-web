@@ -152,7 +152,7 @@
 .sobre .row .content p{
     font-size: 2rem;
     color: #999;
-    padding: 5rem 0;
+    padding: 3rem 0 0 0;
 }
 
 .sobre .row .content button{
@@ -193,7 +193,7 @@
     background-color: var(--white);
     width: 25rem;
     box-shadow: 0 .3rem .5rem var(--shadow);
-    cursor: pointer;
+    cursor: default;
 }
 
 
@@ -219,18 +219,45 @@
     filter: grayscale(0);
 }
 
-.cursos .card-container .card a{
+.cursos .card-container .card span{
     font-size: 3rem;
     padding: .5rem 0;
     color: #000000;
 }
 
-.cursos .card-container .card:hover a{
+.cursos .card-container .card:hover span{
     color: var(--c_blue1);
 }
 
 .cursos .card-container .card:hover{
     border:0.4rem solid var(--c_blue1);
+}
+
+.cursos .btt_videoplayer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursos .btt_videoplayer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 20rem;
+    border-radius: 5rem;
+    background: var(--c_blue1);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .2s;
+    border:none;
+    box-shadow: 0 .3rem 1rem var(--shadow);
+    cursor: pointer;
+}
+
+.cursos .btt_videoplayer a:hover{
+    background: var(--c_pink1);
 }
 
 .contato{
@@ -371,6 +398,10 @@ header .fa-times{
 
     .cursos .box-container{
         width: 100%;
+    }
+
+    .cursos .card-container .card{
+        min-width: 20rem;
     }
 
     .contato .row{

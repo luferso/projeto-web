@@ -54,6 +54,10 @@
     text-decoration: none;
     color: var(--c_blue2);
 }
+
+#return_arrow i:hover{
+    color: var(--c_pink1);
+}
 .container{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -71,6 +75,13 @@
 .container .main-video video{
     width: 100%;
     border-radius: 5px;
+    display: none;
+}
+
+#initialImage{
+    width: 100%;
+    border-radius: 5px;
+    display: block;
 }
 
 .container .main-video .title{

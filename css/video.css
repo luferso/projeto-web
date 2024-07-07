@@ -46,7 +46,14 @@
     font-weight: 500;
 }
 
-
+#return_arrow i{
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    top: 29px;
+    text-decoration: none;
+    color: var(--c_blue2);
+}
 .container{
     display: grid;
     grid-template-columns: 2fr 1fr;

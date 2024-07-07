@@ -49,8 +49,8 @@
 #return_arrow i{
     display: flex;
     font-size: 30px;
-    position: absolute;
-    top: 29px;
+    position: relative;
+    top: 10px;
     text-decoration: none;
     color: var(--c_blue2);
 }
@@ -206,19 +206,6 @@
     border-radius: 0 0 5px 5px;
 }
 
-.ger{
-    background-image: url(../img/flag_ger.png);
-}
-.esp{
-    background-image: url(../img/flag_spa.png);
-}
-.cor{
-    background-image: url(../img/flag_kor.png);
-}
-.eng{
-    background-image: url(../img/flag_usa.png);
-}
-
 
 @media(max-width:991px){
 
@@ -234,6 +221,16 @@
 
     .container{
         grid-template-columns: 1fr;
+        min-width: 90px;
+        align-items: center;
+        padding-left: 0.5rem ;
+        padding-right:0.5rem;
+        margin: 10rem  1rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        padding-top: 15px;
     }
 
 }

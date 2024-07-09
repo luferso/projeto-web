@@ -158,12 +158,12 @@
             <div class="row">
 
                 <div class="form-container">
-                    <form action="">
-                        <input type="text" placeholder="nome completo">
-                        <input type="text" placeholder="insira seu email">
-                        <input type="number" placeholder="telefone">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="mensagem"></textarea>
-                        <input type="submit" value="enviar">
+                    <form action="#contato">
+                        <input type="text" placeholder=" Nome Completo" id="i_nome">
+                        <input type="text" placeholder=" Insira seu email" id="i_email">
+                        <input type="number" placeholder=" Telefone celular" id="i_telefone">
+                        <textarea name="" id="" cols="30" rows="10" placeholder=" Mensagem"></textarea>
+                        <input type="submit" value="Enviar" onclick='swal({icon: "success",title: "Mensagem enviada!"})'>
                     </form>
                 </div>
 
@@ -181,10 +181,10 @@
         <section class="footer">
 
             <div class="icons">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-x"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-whatsapp"></a>
+                <a href="https://facebook.com" class="fab fa-facebook-f"></a>
+                <a href="https://x.com" class="fab fa-x"></a>
+                <a href="https://instagram.com" class="fab fa-instagram"></a>
+                <a href="https://github.com/luferso/projeto_web_falai.git" class="fab fa-whatsapp"></a>
             </div>
 
             <div class="creditos">
@@ -197,5 +197,6 @@
         <!-- jquery cdn link -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
 </html>
